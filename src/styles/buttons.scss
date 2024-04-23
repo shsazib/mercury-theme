@@ -6,52 +6,63 @@
 
 // intro play btn
 .intro-play-btn {
-  --tw-shadow: 0 0px 0px 0px rgba(254, 96, 25, 0.6);
+  --tw-shadow: 0 0px 0px 0px #fe601999;
   --tw-shadow-colored: 0 0px 0px 0px var(--tw-shadow-color);
-  --tw-content: "";
-  @apply transition-all cubic-bezier(.4, 0, .2, 1) duration-300;
-  @apply animation shadowPulse 1.8s infinite;
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .3s
 }
 
 .intro-play-btn:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.intro-play-btn {
+  animation: shadowPulse 1.8s infinite
 }
 
 .intro-play-btn:before {
-  content: var(--tw-content);
-  @apply absolute top-0 left-0 h-full w-full rounded-full;
-  --tw-shadow: 0 0px 0px 0px rgba(2, 131, 252, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 9999px;
+  --tw-shadow: 0 0px 0px 0px #0283fc;
   --tw-shadow-colored: 0 0px 0px 0px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  @apply animation shadowPulse2 1.8s infinite;
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  --tw-content: "";
+  content: var(--tw-content);
+  animation: shadowPulse2 1.8s infinite
 }
 
 @keyframes shadowPulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(2, 131, 252, 0.79);
+      box-shadow: 0 0 0 0 #0283fcc9
   }
 
   70% {
-    box-shadow: 0 0 0 25px rgba(2, 131, 252, 0.02);
+      box-shadow: 0 0 0 25px #0283fc05
   }
 
   to {
-    box-shadow: 0 0 0 0 rgba(2, 131, 252, 0.02);
+      box-shadow: 0 0 0 0 #0283fc05
   }
 }
 
 @keyframes shadowPulse2 {
   0% {
-    box-shadow: 0 0 0 0 rgba(2, 131, 252, 1);
+      box-shadow: 0 0 0 0 #0283fc
   }
 
   70% {
-    box-shadow: 0 0 0 10px rgba(2, 131, 252, 0.02);
+      box-shadow: 0 0 0 10px #0283fc05
   }
 
   to {
-    box-shadow: 0 0 0 0 rgba(2, 131, 252, 0.02);
+      box-shadow: 0 0 0 0 #0283fc05
   }
 }
