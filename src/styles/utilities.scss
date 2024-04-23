@@ -18,3 +18,12 @@
 .shadow {
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
 }
+
+
+
+
+// Background Image
+.bg_image {
+  @apply w-full sm:w-[80%] mx-auto h-auto object-cover bg-repeat-y;
+  background-image: url('../images/bg-pattern.png');
+}

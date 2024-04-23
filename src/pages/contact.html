@@ -1,49 +1,87 @@
-@@include('page-header.html', { "title": "Contact" })
-
-<section class="section-sm">
+<section class="pt-10 sm:pt-20 bg_image">
   <div class="container">
-    <div class="row">
-      <div class="mx-auto md:col-10 lg:col-6">
-        <form action="#" method="POST">
-          <div class="mb-6">
-            <label for="name" class="form-label">
-              Full Name <span class="text-red-500">*</span>
-            </label>
-            <input
-              id="name"
-              name="name"
-              class="form-input"
-              placeholder="John Doe"
-              type="text"
-            />
+    <div class="grid lg:grid-cols-2 gap-10 justify-between">
+      <div class="">
+        <h1 class=" text-h3 lg:text-h1">Get in touch today!</h1>
+        <p class="mb-4 text-[#BABABA]">Lorem ipsum dolor sit amet, consectetur adipiscing.
+          egestas viverra id aliquet. vulputate sollicitudin. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+        <p class="mb-2 text-lg font-semibold">Telephone. (411) 830 – 3404</p>
+        <p class=" text-lg font-semibold">Email. hello@uxper.co</p>
+        <div class="flex items-center gap-3 mt-3">
+          <a href="#">
+            <img src="images/fb-icon.png" alt="icone" class="w-10">
+          </a>
+          <a href="#">
+            <img src="images/twitter-icon.png" alt="icone" class="w-10">
+          </a>
+          <a href="#">
+            <img src="images/linkedin-icon.png" alt="icone" class="w-10">
+          </a>
+          <a href="#">
+            <img src="images/skype-icon.png" alt="icone" class="w-10">
+          </a>
+        </div>
+      </div>
+      <div class="bg-[#082143] p-10 rounded-2xl">
+        <form action="" method="" class="grid gap-5">
+          <div class="grid gap-2">
+            <label for="name">Full Name</label>
+            <input class="bg-[#082143] p-3 border border-[#22416b] rounded" type="text" id="name" placeholder="Your Full Name">
           </div>
-          <div class="mb-6">
-            <label for="email" class="form-label">
-              Working Mail <span class="text-red-500">*</span>
-            </label>
-            <input
-              id="email"
-              name="email"
-              class="form-input"
-              placeholder="john.doe@email.com"
-              type="email"
-            />
+          <div class="grid gap-2">
+            <label for="email">Email Adrdess</label>
+            <input class="bg-[#082143] p-3 border border-[#22416b] rounded" type="text" id="email" placeholder="Your Email Adrdess">
           </div>
-          <div class="mb-6">
-            <label for="message" class="form-label">
-              Anything else? <span class="text-red-500">*</span>
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              class="form-input"
-              placeholder="Message goes here..."
-              rows="8"
-            ></textarea>
+          <div class="grid gap-2">
+            <label for="reason">Reason/Purpose</label>
+            <select class="bg-[#082143] p-3 border border-[#22416b] rounded" name="reason" id="reason">
+              <option value="" selected>Investment Plan</option>
+            </select>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="grid gap-2">
+            <label for="message" id="message">Message Here</label>
+            <textarea class="bg-[#082143] p-3 border border-[#22416b] rounded " name="message" id="message" cols="30" rows="5" placeholder="How We Can Help You"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn-1">Send a message</button>
+          </div>
         </form>
       </div>
     </div>
   </div>
 </section>
+
+<section class="pt-10 sm:pt-20 bg_image">
+  <div class="container">
+    <div class="lg:max-w-4xl md:max-w-3xl mx-auto">
+      <h1 class="mb-5 text-h4 lg:text-h2 text-center lg:max-w-2xl md:max-w-xl mx-auto">We help small businesses with big
+        hearts make meaningful hires</h1>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="bg-[#082143] p-10 rounded-2xl">
+          <p class="text-2xl font-bold text-center pb-3">New York</p>
+          <img src="images/contact-1-shape-1.png" alt="shape" class="w-8 mx-auto pb-3">
+          <p class="text-[#BABABA] text-center pb-3">106 Hoang Quoc Viet,
+            Cau Giay, Hanoi</p>
+          <p class="text-xl font-semibold text-center">(415) 870 – 3204</p>
+        </div>
+        <div class="bg-[#082143] p-10 rounded-2xl">
+          <p class="text-2xl font-bold text-center pb-3">Hanoi</p>
+          <img src="images/contact-1-shape-2.png" alt="shape" class="w-8 mx-auto pb-3">
+          <p class="text-[#BABABA] text-center pb-3">106 Hoang Quoc Viet,
+            Cau Giay, Hanoi</p>
+          <p class="text-xl font-semibold text-center">(415) 870 – 3204</p>
+        </div>
+        <div class="bg-[#082143] p-10 rounded-2xl">
+          <p class="text-2xl font-bold text-center pb-3">Paris</p>
+          <img src="images/contact-1-shape-3.png" alt="shape" class="w-8 mx-auto pb-3">
+          <p class="text-[#BABABA] text-center pb-3">106 Hoang Quoc Viet,
+            Cau Giay, Hanoi</p>
+          <p class="text-xl font-semibold text-center">(415) 870 – 3204</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+@@include('download-theme.html')
