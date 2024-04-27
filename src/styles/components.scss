@@ -13,11 +13,11 @@
 
 // form style
 .form-input {
-  @apply w-full rounded border-transparent bg-theme-light px-6 py-4 text-dark placeholder:text-light focus:border-primary focus:ring-transparent dark:border-darkmode-border dark:bg-darkmode-theme-light dark:text-darkmode-light;
+  @apply w-full rounded border-border bg-theme-light px-6 py-4 text-dark placeholder:text-light focus:border-primary focus:ring-transparent dark:border-darkmode-border dark:bg-darkmode-theme-light dark:text-darkmode-light;
 }
 
 .form-label {
-  @apply mb-4 block font-secondary text-xl font-normal text-dark dark:text-darkmode-light;
+  @apply mb-2 block font-secondary text-xl font-normal dark:text-darkmode-light;
 }
 
 // social icons

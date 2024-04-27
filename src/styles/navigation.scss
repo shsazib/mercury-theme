@@ -36,7 +36,7 @@ input#nav-toggle:checked ~ #nav-menu {
 // }
 
 .nav-link {
-  @apply block p-3 transition lg:px-2 lg:py-3;
+  @apply block p-3 transition lg:px-2 lg:py-3 text-text;
 }
 
 .nav-dropdown {
@@ -52,7 +52,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-dropdown-link {
-  @apply block py-1 text-dark transition hover:text-primary dark:text-darkmode-text dark:hover:text-darkmode-primary;
+  @apply block py-1 text-text transition hover:text-primary dark:text-darkmode-text dark:hover:text-darkmode-primary;
 }
 
 //theme-switcher
